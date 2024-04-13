@@ -1,6 +1,5 @@
 #  Ideias do que você pode adicionar ao desafio do projeto:
 
-***
 
 ## Seções
 
@@ -20,9 +19,9 @@ Essas são apenas algumas ideias para adicionar ao seu perfil README. Sinta-se �
 
 Gostaria de compartilhar que contribuí significativamente no GitHub como parte do desafio relacionado ao curso "Contribuindo em um Projeto Open Source no GitHub" oferecido pela plataforma Digital Innovation One (DIO).
 
-Minha contribuição envolveu a elaboração de um ***README*** para um projeto específico no GitHub, seguindo as diretrizes fornecidas pelo curso. No ***README***, adicionei informações relevantes, como objetivos do projeto, ferramentas utilizadas, etapas do percurso de aprendizado e instruções detalhadas para os participantes do desafio.
+Minha contribuição envolveu a elaboração de um ***README*** para um projeto específico no GitHub, seguindo as diretrizes fornecidas pelo curso. No ***README***, adicionei informações relevantes, como sugestões para criação do projeto, ferramentas utilizadas e um jogo criado em python para os participantes do desafio.
 
-Além disso, aproveitei a oportunidade para adicionar seções extras ao ***README***, como uma lista de projetos anteriores, minhas habilidades pessoais, links úteis e informações de contato. Essas adições foram feitas de forma a destacar minhas experiências e competências de maneira clara e organizada.
+Além disso, aproveitei a oportunidade para adicionar seções extras ao ***README***, minhas formações, links úteis e informações de contato. Essas adições foram feitas de forma a destacar minhas experiências e competências de maneira clara e organizada.
 
 Minha contribuição reflete meu compromisso com o aprendizado contínuo e o desenvolvimento de habilidades práticas em projetos de código aberto. Espero que minha participação inspire outros alunos da ***DIO*** a se envolverem ativamente na comunidade de desenvolvimento de software e a contribuírem para projetos significativos no ***GitHub***.
 
@@ -80,6 +79,64 @@ tela.listen()
 turtle.done()
 ```
 
+### Tutorial: Jogo da Tartaruga
+
+Neste tutorial, você aprenderá como criar um jogo simples onde uma tartaruga pode se mover pela tela usando as setas do teclado. Vamos começar!
+
+#### 1. Importe o módulo Turtle
+```python
+import turtle
+```
+
+#### 2. Crie a Tela e a Tartaruga
+```python
+tela = turtle.Screen()
+tartaruga = turtle.Turtle()
+```
+
+#### 3. Defina a Velocidade da Tartaruga
+```python
+tartaruga.speed(0)  # Define a velocidade máxima (0) para a tartaruga
+```
+
+#### 4. Defina as Funções de Movimento
+```python
+def mover_cima():
+    tartaruga.setheading(90)
+    tartaruga.forward(10)
+
+def mover_baixo():
+    tartaruga.setheading(270)
+    tartaruga.forward(10)
+
+def mover_esquerda():
+    tartaruga.setheading(180)
+    tartaruga.forward(10)
+
+def mover_direita():
+    tartaruga.setheading(0)
+    tartaruga.forward(10)
+```
+
+#### 5. Vincule as Funções às Teclas do Teclado
+```python
+tela.onkeypress(mover_cima, "Up")
+tela.onkeypress(mover_baixo, "Down")
+tela.onkeypress(mover_esquerda, "Left")
+tela.onkeypress(mover_direita, "Right")
+```
+
+#### 6. Inicie o Loop Principal e Aguarde Entradas do Teclado
+```python
+tela.listen()
+turtle.done()
+```
+
+#### Como Jogar:
+- Use as setas do teclado para mover a tartaruga para cima, para baixo, para a esquerda ou para a direita.
+- Tente navegar pela tela e explorar o ambiente!
+
+Com este tutorial, você pode criar um jogo simples onde os jogadores podem controlar uma tartaruga usando o teclado. Divirta-se explorando e personalizando este código para criar jogos ainda mais interessantes!
 
 ## Contatos
 
@@ -91,3 +148,5 @@ turtle.done()
 🎸Claudio G. Vargas
 
 Graduado em Analise e Desenvolvimento de Sistemas 🍃
+
+Graduado em Tecnologia em Processos Gerenciais 🎧
